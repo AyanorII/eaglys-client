@@ -12,7 +12,7 @@ import {
 	FormLabel,
 	FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { createQuery } from "../actions";
@@ -58,7 +58,7 @@ export const QueryForm = () => {
 							<FormItem>
 								<FormLabel>Query</FormLabel>
 								<FormControl>
-									<Input {...field} placeholder="SELECT * FROM users" />
+									<Textarea {...field} placeholder="SELECT * FROM users" />
 								</FormControl>
 								<FormMessage />
 							</FormItem>
